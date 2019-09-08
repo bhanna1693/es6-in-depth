@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Custom Promises</title>
+</head>
+
+<body>
+  <p>open console</p>
+  <script>
+  navigator.geolocation.getCurrentPosition(function(pos) {
+    console.log('it worked');
+    console.log(pos);
+  }, function(err) {
+    console.error('it failed');
+    console.error(err);
+  })
+  </script>
+</body>
+
+</html>
